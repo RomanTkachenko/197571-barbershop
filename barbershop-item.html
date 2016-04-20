@@ -10,7 +10,9 @@
 			<nav class="main-navigation">
 				<ul>
 					<li>
-						<div class="logo">Логотип</div>  <!-- Сюда буду вставляь логотип. Пока не знаю в каком формате (рисунок, фон)-->
+						<a href="index.html">
+							<img src="http://placehold.it" width="150" height="40" alt="Логотип">
+						</a> <!--УТОЧНИТЬ СТИЛИЗАЦИЮ!!!  Причина: В ТЗ предусмотрено, что логотип не является ссылкой.-->
 					</li>
 					<li>
 						<a href="#">Информация</a>
@@ -54,23 +56,31 @@
 			</figure>
 			<div class="small-pictures">
 				<figure>
-					<img src="img/photo-1.jpg" width="286" height="164" alt="photo-1.jpg">
+					<a href="#">
+						<img src="img/photo-1.jpg" width="286" height="164" alt="Изображение товара 1">
+					</a>
 				</figure>
 				<figure>
-					<img src="img/photo-1.jpg" width="286" height="164" alt="photo-2.jpg">
+					<a href="#">
+						<img src="img/photo-1.jpg" width="286" height="164" alt="Изображение товара 2">
+					</a>
 				</figure>
 				<figure>
-					<img src="img/photo-1.jpg" width="286" height="164" alt="photo-3.jpg">
+					<a href="#">
+						<img src="img/photo-1.jpg" width="286" height="164" alt="Изображение товара 3">
+					</a>
 				</figure>
 			</div>
 		</section>
 		<section class="product-description">
-			<p>Есть в наличии</p>
-			<p>артикул:Dexter-ae</p>
-			<p>Travel kit-необходимый аксессуар во время любого путешествия. В аккуратной кожанной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+			<div>
+				<div>Есть в наличии</div>
+				<div>артикул:Dexter-ae</div>
+			</div>
+			<div>Travel kit-необходимый аксессуар во время любого путешествия. В аккуратной кожанной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</div>
 		</section>
 		<section class="product-price">
-			<p>2 900 руб.</p>
+			<div>2 900 руб.</div>
 			<a href="#">Купить</a>
 		</section>
 		<section class="delivery-contents">
@@ -95,9 +105,17 @@
 			</section>
 			<section class="footer-social">
 				<p>Давайте дружить!</p>
-				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				<ul class="social-list">
+					<li class="social-item">
+						<a href="#" class="social-link social-link-vk">В контакте</a>
+					</li>
+					<li class="social-item">
+						<a href="#" class="social-link social-link-fb">Facebook</a>
+					</li>
+					<li class="social-item">
+						<a href="#" class="social-link social-link-inst">Инстаграм</a>
+					</li>
+				</ul>
 			</section>
 			<section class="footer-copyright">
 				<p>Разработано:</p>

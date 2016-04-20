@@ -10,7 +10,9 @@
 			<nav class="main-navigation">
 				<ul>
 					<li>
-						<div class="logo">Логотип</div>  <!-- Сюда буду вставляь логотип. Пока не знаю в каком формате (рисунок, фон)-->
+						<a href="index.html">
+							<img src="http://placehold.it" width="150" height="40" alt="Логотип">
+						</a> <!--УТОЧНИТЬ СТИЛИЗАЦИЮ!!!  Причина: В ТЗ предусмотрено, что логотип не является ссылкой.-->
 					</li>
 					<li>
 						<a href="#">Информация</a>
@@ -29,9 +31,9 @@
 					</li>
 				</ul>
 			</nav>
-		</div>
-		<div class="user-block">
-			<a href="#">Вход</a>
+			<div class="user-block">
+				<a href="#">Вход</a>
+			</div>
 		</div>
 	</header>
 	<main class="container">
@@ -43,103 +45,159 @@
 			<li>
 				<a href="#">Магазин</a>
 			</li>
-			<li>Средства для ухода</li>
+			<li>
+				Средства для ухода
+			</li>
 		</ul>
 		<div class="catalog-content">
 			<form  action="/blank-1.html">
-				<h2>Производители:</h2>
-				<input type="checkbox" name="baxter of california" checked><br>
-				<input type="checkbox" name="mr natty"><br>
-				<input type="checkbox" name="suavecito" checked><br>
-				<input type="checkbox" name="malin+goetz"><br>
-				<input type="checkbox" name="murray's"><br>
-				<input type="checkbox" name="american crew" checked><br>
-				<h2>Группы товаров:</h2>
-				<label><input type="radio" name="product" value="Бритвенные принадлежности">Бритвенные принадлежности</label><br>
-				<label><input type="radio" name="product" value="Средства для ухода" checked>Средства для ухода</label>><br>
-				<label><input type="radio" name="product" value="Аксессуары">Аксессуары</label><br>
+				<div class="manufacturers">
+					<h2>Производители:</h2>
+					<label>
+						<input type="checkbox" name="baxter_of_california" checked>baxter of california
+					</label>
+					<label>
+						<input type="checkbox" name="mr_natty">Mr natty
+					</label>
+					<label>
+						<input type="checkbox" name="suavecito" checked>Suavecito
+					</label>
+					<label>
+						<input type="checkbox" name="malin_goetz">Malin+goets
+					</label>
+					<label>
+						<input type="checkbox" name="murrays">Murray's
+					</label>
+					<label>
+						<input type="checkbox" name="american_crew" checked>Americsn crew
+					</label>
+				</div>
+				<div class="product-group">
+					<h2>Группы товаров:</h2>
+					<label>
+						<input type="radio" name="product" value="Бритвенные принадлежности">Бритвенные принадлежности
+					</label>
+					<label>
+						<input type="radio" name="product" value="Средства для ухода" checked>Средства для ухода
+					</label>
+					<label>
+						<input type="radio" name="product" value="Аксессуары">Аксессуары
+					</label>
+				</div>
 				<button class="btn" type="submit">Показать</button>
 			</form>
 			<div class="products">
 				<article class="products-item item-1">
 					<figure class="products-item-image">
-						<a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt="Набор для путешествий baxter of california"></a>
+						<a href="#">
+							<img src="img/photo-1.jpg" width="286" height="164" alt="Набор для путешествий baxter of california">
+						</a>
 					</figure>
-					<a href="#">Набор для путешествий<br>
-						<span>"baxter of california"</span>
-					</a>
+					<div class="product-name">
+						<a href="#">Набор для путешествий<br>
+							<span>"baxter of california"</span>
+						</a>
+					</div>
 					<section class="product-price">
-						<p>2 900 руб.</p>
+						<div>2 900 руб.</div>
 						<a href="#">Купить</a>
 					</section>
 				</article>
 				<article class="products-item">
 					<figure class="products-item-image">
-						<a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt="Увлажняющий кондиционер baxter of california"></a>
+						<a href="#">
+							<img src="img/photo-1.jpg" width="286" height="164" alt="Увлажняющий кондиционер baxter of california">
+						</a>
 					</figure>
-					<a href="#">Увлажняющий кондиционер<br>
-						<span>"baxter of california"</span>
-					</a>
+					<div class="product-name">
+						<a href="#">Увлажняющий кондиционер<br>
+							<span>"baxter of california"</span>
+						</a>
+					</div>
 					<section class="product-price">
-						<p>750 руб.</p>
+						<div>750 руб.</div>
 						<a href="#">Купить</a>
 					</section>
 				</article>
 				<article class="products-item">
 					<figure class="products-item-image">
-						<a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt="Гель для волос Suavecito"></a>
+						<a href="#">
+							<img src="img/photo-1.jpg" width="286" height="164" alt="Гель для волос Suavecito">
+						</a>
 					</figure>
-					<a href="#">Гель для волос<br>
-						<span>"Suavecito"</span>>
-					</a>
+					<div class="product-name">
+						<a href="#">Гель для волос<br>
+							<span>"Suavecito"</span>
+						</a>
+					</div>
 					<section class="product-price">
-						<p>290 руб.</p>
+						<div>290 руб.</div>
 						<a href="#">Купить</a>
 					</section>
 				</article>
 				<article class="products-item">
 					<figure class="products-item-image">
-						<a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt="Глина для укладки волос American crew"></a>
+						<a href="#">
+							<img src="img/photo-1.jpg" width="286" height="164" alt="Глина для укладки волос American crew">
+						</a>
 					</figure>
-					<a href="#">Глина для укладки волос<br>
-						<span>"American crew"</span>
-					</a>
+					<div class="product-name">
+						<a href="#">Глина для укладки волос<br>
+							<span>"American crew"</span>
+						</a>
+					</div>
 					<section class="product-price">
-						<p>500 руб.</p>
+						<div>500 руб.</div>
 						<a href="#">Купить</a>
 					</section>
 				</article>
 				<article class="products-item">
 					<figure class="products-item-image">
-						<a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt="Гель для волос American crew"></a>
+						<a href="#">
+							<img src="img/photo-1.jpg" width="286" height="164" alt="Гель для волос American crew">
+						</a>
 					</figure>
-					<a href="#">Гель для волос<br>
-						<span>"American crew"</span>
-					</a>
+					<div class="product-name">
+						<a href="#">Гель для волос<br>
+							<span>"American crew"</span>
+						</a>
+					</div>
 					<section class="product-price">
-						<p>300 руб.</p>
+						<div>300 руб.</div>
 						<a href="#">Купить</a>
 					</section>
 				</article>
 				<article class="products-item">
 					<figure class="products-item-image">
-						<a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt="Набор для бритья baxter of california"></a>
+						<a href="#">
+							<img src="img/photo-1.jpg" width="286" height="164" alt="Набор для бритья baxter of california">
+						</a>
 					</figure>
-					<a href="#">Набор для бритья<br>
-						<span>"baxter of california"</span>
-					</a>
+					<div class="product-name">
+						<a href="#">Набор для бритья<br>
+							<span>"baxter of california"</span>
+						</a>
+					</div>
 					<section class="product-price">
-						<p>3 900 руб.</p>
+						<div>3 900 руб.</div>
 						<a href="#">Купить</a>
 					</section>
 				</article>
 			</div>
-		</div>
-		<div class="paginator">
-			<a href="#">1</a>
-			<span>2</span>
-			<a href="#">3</a>
-			<a href="#">4</a>
+			<ul class="pagination-list">
+				<li class="pagination-item">
+					<a href="#" class="pagination-link">1</a>
+				</li>
+				<li class="pagination-item pagination-item-active">
+					2
+				</li>
+				<li class="pagination-item">
+					<a href="#" class="pagination-link">3</a>
+				</li>
+				<li class="pagination-item">
+					<a href="#" class="pagination-link">4</a>
+				</li>
+			</ul>
 		</div>
 	</main>
 	<footer class="main-footer">
@@ -153,9 +211,17 @@
 			</section>
 			<section class="footer-social">
 				<p>Давайте дружить!</p>
-				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				<ul class="social-list">
+					<li class="social-item">
+						<a href="#" class="social-link social-link-vk">В контакте</a>
+					</li>
+					<li class="social-item">
+						<a href="#" class="social-link social-link-fb">Facebook</a>
+					</li>
+					<li class="social-item">
+						<a href="#" class="social-link social-link-inst">Инстаграм</a>
+					</li>
+				</ul>
 			</section>
 			<section class="footer-copyright">
 				<p>Разработано:</p>
