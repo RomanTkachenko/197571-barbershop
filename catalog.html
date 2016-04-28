@@ -5,14 +5,14 @@
 	<title>Каталог</title>
 	<link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="catalog">
 	<header class="main-header">
-		<div class="container">
+		<div class="container clearfix">
 			<nav class="main-navigation">
 				<ul>
 					<li>
 						<a href="index.html">
-							<img src="img/12_small-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»">
+							<img src="img/small-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»">
 						</a> <!--УТОЧНИТЬ СТИЛИЗАЦИЮ!!!  Причина: В ТЗ предусмотрено, что логотип не является ссылкой.-->
 					</li>
 					<li>
@@ -50,8 +50,8 @@
 				Средства для ухода
 			</li>
 		</ul>
-		<div class="catalog-content">
-			<form  action="/blank-1.html">
+		<div class="catalog-content clearfix">
+			<form class="product-filters" action="/blank-1.html">
 				<div class="manufacturers">
 					<h2>Производители:</h2>
 					<label>
@@ -88,10 +88,11 @@
 				<button class="btn" type="submit">Показать</button>
 			</form>
 			<div class="products">
+
 				<article class="products-item item-1">
 					<figure class="products-item-image">
 						<a href="#">
-							<img src="img/18_shop-item-1.jpg" width="220" height="165" alt="Набор для путешествий baxter of california">
+							<img src="img/shop-item-1.jpg" width="220" height="165" alt="Набор для путешествий baxter of california">
 						</a>
 					</figure>
 					<div class="product-name">
@@ -99,15 +100,16 @@
 							<span>"baxter of california"</span>
 						</a>
 					</div>
-					<section class="product-price">
-						<div>2 900 руб.</div>
+					<div class="product-price">
+						<div class="price">2 900 руб.</div>
 						<a href="#">Купить</a>
-					</section>
+					</div>
 				</article>
+
 				<article class="products-item">
 					<figure class="products-item-image">
 						<a href="#">
-							<img src="img/19-shop-item-2.jpg" width="220" height="165" alt="Увлажняющий кондиционер baxter of california">
+							<img src="img/shop-item-2.jpg" width="220" height="165" alt="Увлажняющий кондиционер baxter of california">
 						</a>
 					</figure>
 					<div class="product-name">
@@ -115,15 +117,16 @@
 							<span>"baxter of california"</span>
 						</a>
 					</div>
-					<section class="product-price">
-						<div>750 руб.</div>
-						<a href="#">Купить</a>
-					</section>
+					<div class="product-price">
+						<div class="price">750 руб.</div>
+						<div class="buy"><a href="#">Купить</a></div>
+					</div>
 				</article>
+
 				<article class="products-item">
 					<figure class="products-item-image">
 						<a href="#">
-							<img src="img/20_shop-item-3.jpg" width="220" height="165" alt="Гель для волос Suavecito">
+							<img src="img/shop-item-3.jpg" width="220" height="165" alt="Гель для волос Suavecito">
 						</a>
 					</figure>
 					<div class="product-name">
@@ -131,15 +134,16 @@
 							<span>"Suavecito"</span>
 						</a>
 					</div>
-					<section class="product-price">
-						<div>290 руб.</div>
-						<a href="#">Купить</a>
-					</section>
+					<div class="product-price">
+						<div class="price">290 руб.</div>
+						<div class="buy"><a href="#">Купить</a></div>
+					</div>
 				</article>
+
 				<article class="products-item">
 					<figure class="products-item-image">
 						<a href="#">
-							<img src="img/21_shop-item-4.jpg" width="220" height="165" alt="Глина для укладки волос American crew">
+							<img src="img/shop-item-4.jpg" width="220" height="165" alt="Глина для укладки волос American crew">
 						</a>
 					</figure>
 					<div class="product-name">
@@ -147,15 +151,16 @@
 							<span>"American crew"</span>
 						</a>
 					</div>
-					<section class="product-price">
-						<div>500 руб.</div>
-						<a href="#">Купить</a>
-					</section>
+					<div class="product-price">
+						<div class="price">500 руб.</div>
+						<div class="buy"><a href="#">Купить</a></div>
+					</div>
 				</article>
+
 				<article class="products-item">
 					<figure class="products-item-image">
 						<a href="#">
-							<img src="img/22_shop-item-5.jpg" width="220" height="165" alt="Гель для волос American crew">
+							<img src="img/shop-item-5.jpg" width="220" height="165" alt="Гель для волос American crew">
 						</a>
 					</figure>
 					<div class="product-name">
@@ -163,15 +168,16 @@
 							<span>"American crew"</span>
 						</a>
 					</div>
-					<section class="product-price">
-						<div>300 руб.</div>
-						<a href="#">Купить</a>
-					</section>
+					<div class="product-price">
+						<div class="price">300 руб.</div>
+						<div class="buy"><a href="#">Купить</a></div>
+					</div>
 				</article>
+
 				<article class="products-item">
 					<figure class="products-item-image">
 						<a href="#">
-							<img src="img/23_shop-item-6.jpg" width="220" height="165" alt="Набор для бритья baxter of california">
+							<img src="img/shop-item-6.jpg" width="220" height="165" alt="Набор для бритья baxter of california">
 						</a>
 					</figure>
 					<div class="product-name">
@@ -179,30 +185,30 @@
 							<span>"baxter of california"</span>
 						</a>
 					</div>
-					<section class="product-price">
-						<div>3 900 руб.</div>
-						<a href="#">Купить</a>
-					</section>
+					<div class="product-price">
+						<div class="price">3 900 руб.</div>
+						<div class="buy"><a href="#">Купить</a></div>
+					</div>
 				</article>
 			</div>
-			<ul class="pagination-list">
-				<li class="pagination-item">
-					<a href="#" class="pagination-link">1</a>
-				</li>
-				<li class="pagination-item pagination-item-active">
-					2
-				</li>
-				<li class="pagination-item">
-					<a href="#" class="pagination-link">3</a>
-				</li>
-				<li class="pagination-item">
-					<a href="#" class="pagination-link">4</a>
-				</li>
-			</ul>
 		</div>
+		<ul class="pagination-list">
+			<li class="pagination-item">
+				<a href="#" class="pagination-link">1</a>
+			</li>
+			<li class="pagination-item pagination-item-active">
+				2
+			</li>
+			<li class="pagination-item">
+				<a href="#" class="pagination-link">3</a>
+			</li>
+			<li class="pagination-item">
+				<a href="#" class="pagination-link">4</a>
+			</li>
+		</ul>
 	</main>
 	<footer class="main-footer">
-		<div class="container">
+		<div class="container clearfix">
 			<section class="footer-contacts">
 				<p>Барбершоп «Бородинский»<br>
 					Адрес:г. Санкт-Петербург, Б.Конюшенная, д. 19/8<br>

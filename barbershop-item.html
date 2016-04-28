@@ -5,14 +5,15 @@
 	<title>Набор для путешествий "BAXTER OF CALIFORNIA"</title>
 	<link rel="stylesheet" href="css/style.css"> 
 </head>
-<body>
+<body class="items">
+
 	<header class="main-header">
-		<div class="container">
+		<div class="container clearfix">
 			<nav class="main-navigation">
 				<ul>
 					<li>
 						<a href="index.html">
-							<img src="img/12_small-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»">
+							<img src="img/small-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»">
 						</a> <!--УТОЧНИТЬ СТИЛИЗАЦИЮ!!!  Причина: В ТЗ предусмотрено, что логотип не является ссылкой.-->
 					</li>
 					<li>
@@ -32,9 +33,9 @@
 					</li>
 				</ul>
 			</nav>
-		</div>
-		<div class="user-block">
-			<a href="#">Вход</a>
+			<div class="user-block">
+				<a href="#">Вход</a>
+			</div>
 		</div>
 	</header>
 	<main class="container">
@@ -51,52 +52,54 @@
 			</li>
 			<li>Набор для путешествий "BAXTER OF CALIFORNIA"</li>
 		</ul>
-		<section class="product-gallery">
-			<figure >
-				<img src="img/14_item1-pic3-big.jpg" width="460" height="498" alt="Изображение товара (увеличенное">
-			</figure>
-			<div class="small-pictures">
+		<div class="product-card clearfix">
+			<div class="product-gallery">
 				<figure>
-					<a href="#">
-						<img src="img/15_item1-pic1.jpg" width="140" height="149" alt="Изображение товара 1">
-					</a>
+					<img src="img/item1-pic3-big.jpg" width="460" height="498" alt="Изображение товара-увеличенное">
 				</figure>
-				<figure>
-					<a href="#">
-						<img src="img/16_item1-pic2.jpg" width="140" height="149" alt="Изображение товара 2">
-					</a>
-				</figure>
-				<figure>
-					<a href="#">
-						<img src="img/17_item1-pic3.jpg" width="140" height="149" alt="Изображение товара 3">
-					</a>
-				</figure>
+				<div class="small-pictures clearfix">
+					<figure>
+						<a href="#">
+							<img src="img/item1-pic1.jpg" width="140" height="149" alt="Изображение товара 1">
+						</a>
+					</figure>
+					<figure>
+						<a href="#">
+							<img src="img/item1-pic2.jpg" width="140" height="149" alt="Изображение товара 2">
+						</a>
+					</figure>
+					<figure>
+						<a href="#">
+							<img src="img/item1-pic3.jpg" width="140" height="149" alt="Изображение товара 3">
+						</a>
+					</figure>
+				</div>
 			</div>
-		</section>
-		<section class="product-description">
-			<div>
-				<div>Есть в наличии</div>
-				<div>артикул:Dexter-ae</div>
-			</div>
-			<div>Travel kit-необходимый аксессуар во время любого путешествия. В аккуратной кожанной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</div>
-		</section>
-		<section class="product-price">
-			<div>2 900 руб.</div>
-			<a href="#">Купить</a>
-		</section>
-		<section class="delivery-contents">
-			<h2>В набор входят:</h2>
-			<ul>
-				<li>Средство для умывания (50мл)</li>
-				<li>Увлажняющий крем (50мл)</li>
-				<li>Крем для бритья (50мл)</li>
-				<li>Крем после бритья, шампунь (50мл)</li>
-				<li>Удобная кожанная косметичка</li>
-			</ul>
-		</section>
+			<section class="product-info">
+				<div class="product-attributes clearfix">
+					<div class="availability">Есть в наличии</div>
+					<div class="vendor-code">артикул:Dexter-ae</div>
+				</div>
+				<div class="summary">Travel kit-необходимый аксессуар во время любого путешествия. В аккуратной кожанной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</div>
+				<div class="product-price">
+					<div class="price">2 900 руб.</div>
+					<div class="buy"><a href="#">Купить</a></div>
+				</div>
+				<div class="delivery-contents">
+					<h2>В набор входят:</h2>
+					<ul>
+						<li>Средство для умывания (50мл)</li>
+						<li>Увлажняющий крем (50мл)</li>
+						<li>Крем для бритья (50мл)</li>
+						<li>Крем после бритья, шампунь (50мл)</li>
+						<li>Удобная кожанная косметичка</li>
+					</ul>
+				</div>
+			</section>
+		</div>
 	</main>
 	<footer class="main-footer">
-		<div class="container">
+		<div class="container clearfix">
 			<section class="footer-contacts">
 				<p>Барбершоп «Бородинский»<br>
 					Адрес:г. Санкт-Петербург, Б.Конюшенная, д. 19/8<br>
