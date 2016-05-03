@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Прайс-лист</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body class="price-page">
@@ -32,9 +34,9 @@
 					</li>
 				</ul>
 			</nav>
-		<div class="user-block">
-			<a href="#">Вход</a>
-		</div>
+			<div class="user-block">
+				<a class="login" href="#">Вход</a>
+			</div>
 		</div>
 	</header>
 	<main class="container">
@@ -44,12 +46,10 @@
 				<a href="#">Главная</a>
 			</li>
 			<li>
-				Прайс-лист
+				<span>Прайс-лист</span>
 			</li>
 		</ul>
-		<div>
-			<h1>Истинно мужская классика</h1>
-		</div>
+		<div class="tagline">Истинно мужская классика</div>
 		<div class="info-block clearfix">
 			<div class="materials-trademarks">
 				<h2>Мы используем только лучшие средства:</h2>
@@ -65,15 +65,15 @@
 				<table>
 					<tr>
 						<td>Стрижка</td>
-						<td>1500 р.</td>
+						<td class="column-2">1500 р.</td>
 					</tr>	
 					<tr>
 						<td>Стрижка бороды</td>
-						<td>500 р.</td>
+						<td class="column-2">500 р.</td>
 					</tr>		
 					<tr>
 						<td>Накрутка усов</td>
-						<td>350 р.</td>
+						<td class="column-2">350 р.</td>
 					</tr>		
 				</table>
 			</div>
@@ -95,15 +95,9 @@
 			</section>
 			<section class="footer-social">
 				<p>Давайте дружить!</p>
-				<li class="social-item">
-					<a href="#" class="social-link social-link-vk">В контакте</a>
-				</li>
-				<li class="social-item">
-					<a href="#" class="social-link social-link-fb">Facebook</a>
-				</li>
-				<li class="social-item">
-					<a href="#" class="social-link social-link-inst">Инстаграм</a>
-				</li>
+				<a href="#" class="social-btn social-btn-vk">В контакте</a>
+				<a href="#" class="social-btn social-btn-fb">Facebook</a>
+				<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
 			</section>
 			<section class="footer-copyright">
 				<p>Разработано:</p>

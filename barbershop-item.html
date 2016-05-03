@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Набор для путешествий "BAXTER OF CALIFORNIA"</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css"> 
 </head>
 <body class="items">
-
 	<header class="main-header">
 		<div class="container clearfix">
 			<nav class="main-navigation">
@@ -34,7 +35,7 @@
 				</ul>
 			</nav>
 			<div class="user-block">
-				<a href="#">Вход</a>
+				<a  class="login" href="#">Вход</a>
 			</div>
 		</div>
 	</header>
@@ -50,19 +51,21 @@
 			<li>
 				<a href="#">Средства для ухода</a>
 			</li>
-			<li>Набор для путешествий "BAXTER OF CALIFORNIA"</li>
+			<li>
+				<span>Набор для путешествий "BAXTER OF CALIFORNIA"</span>
+			</li>
 		</ul>
 		<div class="product-card clearfix">
 			<div class="product-gallery">
-				<figure>
+				<figure class="big-photo">
 					<img src="img/item1-pic3-big.jpg" width="460" height="498" alt="Изображение товара-увеличенное">
 				</figure>
 				<div class="small-pictures clearfix">
-					<figure>
+					<figure class="small-photo">
 						<a href="#">
 							<img src="img/item1-pic1.jpg" width="140" height="149" alt="Изображение товара 1">
 						</a>
-					</figure>
+					</figure class="small-photo">
 					<figure>
 						<a href="#">
 							<img src="img/item1-pic2.jpg" width="140" height="149" alt="Изображение товара 2">
@@ -75,7 +78,7 @@
 					</figure>
 				</div>
 			</div>
-			<section class="product-info">
+			<div class="product-info">
 				<div class="product-attributes clearfix">
 					<div class="availability">Есть в наличии</div>
 					<div class="vendor-code">артикул:Dexter-ae</div>
@@ -83,19 +86,18 @@
 				<div class="summary">Travel kit-необходимый аксессуар во время любого путешествия. В аккуратной кожанной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</div>
 				<div class="product-price">
 					<div class="price">2 900 руб.</div>
-					<div class="buy"><a href="#">Купить</a></div>
+					<a class="btn" href="#">Купить</a>
 				</div>
-				<div class="delivery-contents">
-					<h2>В набор входят:</h2>
-					<ul>
-						<li>Средство для умывания (50мл)</li>
-						<li>Увлажняющий крем (50мл)</li>
-						<li>Крем для бритья (50мл)</li>
-						<li>Крем после бритья, шампунь (50мл)</li>
-						<li>Удобная кожанная косметичка</li>
-					</ul>
-				</div>
-			</section>
+				<div class="delivery-contents">В набор входят:</div>
+				<ul class="content-items">
+					<li>Средство для умывания (50мл)</li>
+					<li>Увлажняющий крем (50мл)</li>
+					<li>Крем для бритья (50мл)</li>
+					<li>Крем после бритья, шампунь (50мл)</li>
+					<li>Удобная кожанная косметичка</li>
+				</ul>
+				
+			</div>
 		</div>
 	</main>
 	<footer class="main-footer">
@@ -109,17 +111,9 @@
 			</section>
 			<section class="footer-social">
 				<p>Давайте дружить!</p>
-				<ul class="social-list">
-					<li class="social-item">
-						<a href="#" class="social-link social-link-vk">В контакте</a>
-					</li>
-					<li class="social-item">
-						<a href="#" class="social-link social-link-fb">Facebook</a>
-					</li>
-					<li class="social-item">
-						<a href="#" class="social-link social-link-inst">Инстаграм</a>
-					</li>
-				</ul>
+				<a href="#" class="social-btn social-btn-vk">В контакте</a>
+				<a href="#" class="social-btn social-btn-fb">Facebook</a>
+				<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
 			</section>
 			<section class="footer-copyright">
 				<p>Разработано:</p>

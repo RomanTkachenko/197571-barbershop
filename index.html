@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>Барбершоп «Бородинский»</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css"> 
 </head>
 
@@ -30,7 +32,7 @@
 			</nav>
 			<div class="user-block">
 				<a class="login" href="#">Вход</a>
-				</div>
+			</div>
 		</div>
 	</header>
 
@@ -54,8 +56,8 @@
 		</section>
 		<div class="index-content clearfix">
 			<div class="index-content-left">
-				<h2>Новости</h2>
-				<ul>
+				<h2 class="index-content-title">Новости</h2>
+				<ul class="news-preview">
 					<li>
 						<p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
 						<time datetime="2016-01-11">11 января</time>
@@ -68,19 +70,19 @@
 				<a class="btn" href="#">Все новости</a>
 			</div>
 			<div class="index-content-right">
-				<h2>Фотогалерея</h2>
+				<h2 class="index-content-title">Фотогалерея</h2>
 				<div class="gallery">
-					<figure>
+					<figure class="gallery-content">
 						<img src="img/gallery-photo.jpg" width="286" height="164" alt="Фотография салона">
 					</figure>
-					<button class="btn gallery-preview" type="button">Назад</button>
+					<button class="btn gallery-preview" type="button" disabled>Назад</button>
 					<button class="btn gallery-next" type="button">Вперед</button>
 				</div>	
 			</div>
 		</div>
 		<div class="index-content clearfix">
 			<div class="index-content-left">
-				<h2>Контактная информация</h2>
+				<h2 class="index-content-title">Контактная информация</h2>
 				<p>Барбершоп «Бородинский»<br>
 					Адрес:г. Санкт-Петербург, Б.Конюшенная, д. 19/8<br>
 					Телефон: +7(812) 666-02-66
@@ -93,7 +95,7 @@
 				<a class="btn" href="#">Обратная связь</a>
 			</div>
 			<div class="index-content-right">
-				<h2>Записаться</h2>
+				<h2 class="index-content-title">Записаться</h2>
 				<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
 				<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
 					<input type="text" name="date" value="" placeholder="Дата">
@@ -116,17 +118,9 @@
 			</section>
 			<section class="footer-social">
 				<p>Давайте дружить!</p>
-				<ul class="social-list">
-					<li class="social-item">
-						<a href="#" class="social-link social-link-vk">В контакте</a>
-					</li>
-					<li class="social-item">
-						<a href="#" class="social-link social-link-fb">Facebook</a>
-					</li>
-					<li class="social-item">
-						<a href="#" class="social-link social-link-inst">Инстаграм</a>
-					</li>
-				</ul>
+				<a href="#" class="social-btn social-btn-vk">В контакте</a>
+				<a href="#" class="social-btn social-btn-fb">Facebook</a>
+				<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
 			</section>
 			<section class="footer-copyright">
 				<p>Разработано:</p>

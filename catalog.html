@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Каталог</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body class="catalog">
@@ -13,7 +15,7 @@
 					<li>
 						<a href="index.html">
 							<img src="img/small-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»">
-						</a> <!--УТОЧНИТЬ СТИЛИЗАЦИЮ!!!  Причина: В ТЗ предусмотрено, что логотип не является ссылкой.-->
+						</a> 
 					</li>
 					<li>
 						<a href="#">Информация</a>
@@ -33,10 +35,11 @@
 				</ul>
 			</nav>
 			<div class="user-block">
-				<a href="#">Вход</a>
+				<a class="login" href="#">Вход</a>
 			</div>
 		</div>
 	</header>
+
 	<main class="container">
 		<h1>Средства для ухода</h1>
 		<ul class="breadcrumbs">
@@ -47,62 +50,54 @@
 				<a href="#">Магазин</a>
 			</li>
 			<li>
-				Средства для ухода
+				<span>Средства для ухода</span>
 			</li>
+
 		</ul>
 		<div class="catalog-content clearfix">
 			<form class="product-filters" action="/blank-1.html">
 				<div class="manufacturers">
 					<h2>Производители:</h2>
-					<label>
-						<input type="checkbox" name="baxter_of_california" checked>baxter of california
-					</label>
-					<label>
-						<input type="checkbox" name="mr_natty">Mr natty
-					</label>
-					<label>
-						<input type="checkbox" name="suavecito" checked>Suavecito
-					</label>
-					<label>
-						<input type="checkbox" name="malin_goetz">Malin+goets
-					</label>
-					<label>
-						<input type="checkbox" name="murrays">Murray's
-					</label>
-					<label>
-						<input type="checkbox" name="american_crew" checked>Americsn crew
-					</label>
+					<input type="checkbox" name="baxter_of_california" id="ch1" checked>
+					<label for="ch1">baxter of california</label>
+					<input type="checkbox" name="mr_natty" id="ch2">
+					<label for="ch2">Mr natty</label>
+					<input type="checkbox" name="suavecito" id="ch3" checked>
+					<label for="ch3">Suavecito</label>
+					<input type="checkbox" name="malin_goetz" id="ch4">
+					<label for="ch4">Malin+goets</label>
+					<input type="checkbox" name="murrays" id="ch5">
+					<label for="ch5">Murray's</label>
+					<input type="checkbox" name="american_crew" id="ch6" checked>
+					<label for="ch6">Americsn crew</label>
 				</div>
 				<div class="product-group">
 					<h2>Группы товаров:</h2>
-					<label>
-						<input type="radio" name="product" value="Бритвенные принадлежности">Бритвенные принадлежности
-					</label>
-					<label>
-						<input type="radio" name="product" value="Средства для ухода" checked>Средства для ухода
-					</label>
-					<label>
-						<input type="radio" name="product" value="Аксессуары">Аксессуары
-					</label>
+					<input type="radio" name="product" value="Бритвенные принадлежности" id="rb1">
+					<label for="rb1">Бритвенные принадлежности</label>
+					<input type="radio" name="product" value="Средства для ухода" id="rb2" checked>
+					<label for="rb2">Средства для ухода</label>
+					<input type="radio" name="product" value="Аксессуары" id="rb3">
+					<label for="rb3">Аксессуары</label>
 				</div>
 				<button class="btn" type="submit">Показать</button>
 			</form>
+			
 			<div class="products">
-
-				<article class="products-item item-1">
+				<article class="products-item">
 					<figure class="products-item-image">
 						<a href="#">
 							<img src="img/shop-item-1.jpg" width="220" height="165" alt="Набор для путешествий baxter of california">
 						</a>
 					</figure>
 					<div class="product-name">
-						<a href="#">Набор для путешествий<br>
+						<a href="#"><span class="product-type">Набор для путешествий</span><br>
 							<span>"baxter of california"</span>
 						</a>
 					</div>
 					<div class="product-price">
 						<div class="price">2 900 руб.</div>
-						<a href="#">Купить</a>
+						<a class="btn"  href="#">Купить</a>
 					</div>
 				</article>
 
@@ -113,13 +108,13 @@
 						</a>
 					</figure>
 					<div class="product-name">
-						<a href="#">Увлажняющий кондиционер<br>
+						<a href="#"><span class="product-type">Увлажняющий кондиционер</span><br>
 							<span>"baxter of california"</span>
 						</a>
 					</div>
 					<div class="product-price">
 						<div class="price">750 руб.</div>
-						<div class="buy"><a href="#">Купить</a></div>
+						<a class="btn" href="#">Купить</a>
 					</div>
 				</article>
 
@@ -130,13 +125,13 @@
 						</a>
 					</figure>
 					<div class="product-name">
-						<a href="#">Гель для волос<br>
+						<a href="#"><span class="product-type">Гель для волос</span><br>
 							<span>"Suavecito"</span>
 						</a>
 					</div>
 					<div class="product-price">
 						<div class="price">290 руб.</div>
-						<div class="buy"><a href="#">Купить</a></div>
+						<a class="btn" href="#">Купить</a>
 					</div>
 				</article>
 
@@ -147,13 +142,13 @@
 						</a>
 					</figure>
 					<div class="product-name">
-						<a href="#">Глина для укладки волос<br>
+						<a href="#"><span class="product-type">Глина для укладки волос</span><br>
 							<span>"American crew"</span>
 						</a>
 					</div>
 					<div class="product-price">
 						<div class="price">500 руб.</div>
-						<div class="buy"><a href="#">Купить</a></div>
+						<a  class="btn" href="#">Купить</a>
 					</div>
 				</article>
 
@@ -164,13 +159,13 @@
 						</a>
 					</figure>
 					<div class="product-name">
-						<a href="#">Гель для волос<br>
+						<a href="#"><span class="product-type">Гель для волос</span><br>
 							<span>"American crew"</span>
 						</a>
 					</div>
 					<div class="product-price">
 						<div class="price">300 руб.</div>
-						<div class="buy"><a href="#">Купить</a></div>
+						<a  class="btn" href="#">Купить</a>
 					</div>
 				</article>
 
@@ -181,13 +176,13 @@
 						</a>
 					</figure>
 					<div class="product-name">
-						<a href="#">Набор для бритья<br>
+						<a href="#"><span class="product-type">Набор для бритья</span><br>
 							<span>"baxter of california"</span>
 						</a>
 					</div>
 					<div class="product-price">
 						<div class="price">3 900 руб.</div>
-						<div class="buy"><a href="#">Купить</a></div>
+						<a class="btn" href="#">Купить</a>
 					</div>
 				</article>
 			</div>
@@ -197,7 +192,7 @@
 				<a href="#" class="pagination-link">1</a>
 			</li>
 			<li class="pagination-item pagination-item-active">
-				2
+			 <span>2</span>
 			</li>
 			<li class="pagination-item">
 				<a href="#" class="pagination-link">3</a>
@@ -218,17 +213,9 @@
 			</section>
 			<section class="footer-social">
 				<p>Давайте дружить!</p>
-				<ul class="social-list">
-					<li class="social-item">
-						<a href="#" class="social-link social-link-vk">В контакте</a>
-					</li>
-					<li class="social-item">
-						<a href="#" class="social-link social-link-fb">Facebook</a>
-					</li>
-					<li class="social-item">
-						<a href="#" class="social-link social-link-inst">Инстаграм</a>
-					</li>
-				</ul>
+				<a href="#" class="social-btn social-btn-vk">В контакте</a>
+				<a href="#" class="social-btn social-btn-fb">Facebook</a>
+				<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
 			</section>
 			<section class="footer-copyright">
 				<p>Разработано:</p>
